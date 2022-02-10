@@ -17,6 +17,7 @@ body{
     font-size: 1.125rem;
     line-height: 1.5;
     margin: 10px 0 10px 0;
+    background-color: red;
 }
 
 /*Navigation*/
@@ -45,6 +46,7 @@ span.boton_menu {
     max-height: 100%;
     width: 100%;
     max-width: 100%;*/
+    
 }
 .icon{
     height: 50px;
