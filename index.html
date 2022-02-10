@@ -15,6 +15,10 @@
         Test Site HE HECHO UN CAMBIO
     </h1>
 
+    <h3 id ="pricetag">
+        El precio de
+    </h3>
+
 <!--Reports User Language and Locale "en-US" or "es-ES"-->
     <script type="text/javascript">
     var userLangs = navigator.languages
@@ -26,14 +30,19 @@
 <!--API call to GeoJS to get visitor Information-->
 
 <p>Hello <span id="user_ip"><span class="icon"><i class="loader"></i></span></span>. The IP you're behind has a country code of <span id="user_countrycode"><span class="icon"><i class="loader"></i></span></span>.</p>
-<script type="application/javascript">
+<!-- <script type="application/javascript">
+    
+    var countryCode ;
+
  function geoip(json) {
      var userip = document.getElementById("user_ip");
      var countrycode = document.getElementById("user_countrycode");
      userip.textContent = json.ip;
      countrycode.textContent = json.country_code;
+     countryCode= json.country_code
+
  }
-</script>
+</script> -->
 <script async src="https://get.geojs.io/v1/ip/geo.js"></script>
 
 <!--Script request location and returns Latitud and Longitude.-->
@@ -61,7 +70,7 @@
 
             navigator.geolocation.getCurrentPosition(success, error, options);
         </script>
-    
+    <script src="forex.js"></script>
 </body>
 
 </html>
