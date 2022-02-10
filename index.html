@@ -14,12 +14,16 @@
     <h1>
         Test Site HE HECHO UN CAMBIO
     </h1>
+
+<!--Reports User Language and Locale "en-US" or "es-ES"-->
     <script type="text/javascript">
     var userLangs = navigator.languages
     var userLang = navigator.language
     console.log('El idioma del visitante es: ' + userLang);
     console.log('Todos los idiomas son: ' + userLangs);
 </script>
+
+<!--API call to GeoJS to get visitor Information-->
 
 <p>Hello <span id="user_ip"><span class="icon"><i class="loader"></i></span></span>. The IP you're behind has a country code of <span id="user_countrycode"><span class="icon"><i class="loader"></i></span></span>.</p>
 <script type="application/javascript">
@@ -32,7 +36,7 @@
 </script>
 <script async src="https://get.geojs.io/v1/ip/geo.js"></script>
 
-     <!--
+<!--Script request location and returns Latitud and Longitude.-->
 
 <script type="text/javascript">
         var options = {
@@ -57,8 +61,6 @@
 
             navigator.geolocation.getCurrentPosition(success, error, options);
         </script>
--->
-    <br>
     
 </body>
 
