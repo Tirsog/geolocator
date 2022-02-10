@@ -1,0 +1,256 @@
+/*Global Variables*/
+*{
+    /*outline: 2px solid red;*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+:root{
+    /*Pendiente de Definir Variables Color*/
+    --faded-denim: #6E8EAC;
+    --main-callto: #FBB03FBB;
+    ;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin: 10px 0 10px 0;
+}
+
+/*Navigation*/
+
+#contenedor_cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1024px;
+    min-width: 800px;
+}
+span.boton_menu {
+    display: none;
+    font-size: 50px; /*Testear en movil*/
+}
+.cabecera{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;*/
+}
+.icon{
+    height: 50px;
+}
+.nav-items{
+    display:inline;
+    font-size: 20px;
+    padding: 10px;
+    color: #3D3D3D;
+}
+@media only screen and (max-width: 1024px) {
+.nav {  
+   max-height: 0;
+    max-width: 0;
+    overflow: hidden;
+    position: static;
+}
+span.boton_menu {
+        display: inline;
+    }
+
+    #contenedor_cabecera{
+
+        width: 90%;
+     /*   min-width: auto;
+        margin: auto;
+        max-width: 100%;
+        min-width: auto;*/
+    }   
+}
+    
+/* presentation*/
+.presentation{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+.fotoblock{
+    display: flex;
+    align-items: center;
+    
+}
+.fototirso{
+    width: auto;
+    border-radius: 50%;
+    border: 3px solid grey;
+}
+.presentation-block{
+    max-width: 900px;
+}
+/* First Section*/
+.working{
+    height: 350px;
+    padding-top: 15px;
+}
+.par,
+.impar {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 24px;
+}
+.par{
+    background-color: cornflowerblue;
+}
+.impar{
+    background-color: cornsilk;
+}
+.caja{
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Review*/
+.reviewblock{
+    display: flex;
+    justify-content: center;
+    margin: 0em 10em 1em 10em;
+    gap: 3em;
+}
+.reviewname{
+    font-family: sans-serif;
+    font-size: 1.125em;
+    font-weight: 600;
+    text-align: center;
+    padding: 1em 1em 0em 1em;
+}
+.reviewdate{
+    font-family: sans-serif;
+    font-size: 1.125em;
+    font-style: italic;
+    text-align: center;
+    padding: 0.75em;
+}
+.reviewcontent{
+    border-top: 1px solid #2b3e4d;
+    border-bottom: 1px solid #2b3e4d;
+    font-family: sans-serif;
+    padding: 1em;
+    font-size: 1.125em;
+    min-height: 110px;
+    line-height: 25px;
+}
+.reviewstars{
+    padding: 1em 0em 0em 0em;
+    text-align: center;
+
+}
+.disclaimer{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.reviewimage{
+    height: 50px;
+    display: block;
+    margin:auto;
+    padding-bottom: 10px;
+}
+/*Color Testing*/
+.footerblock{
+    height: 100px;
+    background-color: burlywood;
+}
+/*Color Testing*/
+
+.cajacolores{
+    padding: 30px;
+}
+.textsize{
+    font-size: 30px;
+    text-align: center;
+}
+.fonttitle{
+    font-size: 24px;
+    font-weight: 600;
+}
+.colorbar{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+.color1{
+    background-color: #6E8EAC;
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+}
+.colorfont1{
+    color: #6E8EAC;
+}
+.colorfont2{
+    color: #000000;
+    font: bold;
+    background-color: #6E8EAC;
+    border-radius: 5%;
+}
+.color2{
+    background-color: #000000;
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+    color: white;
+}
+
+.color3{
+    background-color: #E9B24C;
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+}
+.colorfont3{
+    color: #E9B24C;
+
+}
+.color4{
+    background-color:  #03CC90;
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+}
+.colorfont4{
+    color:  #03CC90;
+    background-color: #ddd6d1;
+    border-radius: 5%;
+}
+.color5{
+    background-color: #ddd6d1;
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+}
+.colorfont5{
+    color: #ddd6d1;
+}
+.color6{
+    background-color:  #F0D1CD;
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+}
+.colorfont6{
+    color:  #F0D1CD;
+}
