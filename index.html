@@ -5,18 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles2.css">
     <link rel="shortcut icon" type="ico" href="img/favicon.png">
-    <title>Tirso G. - Project Management y Gestion de Marca</title>
+    <title>Geolocator Sandbox</title>
 </head>
 
 <body>
     <h1>
-        Test Site HE HECHO UN CAMBIO
+        Geolocator Test
     </h1>
 
     <h3 id ="pricetag">
-        El precio de
+        El precio no ha podido ser determinado.
     </h3>
 
 <!--Reports User Language and Locale "en-US" or "es-ES"-->
@@ -28,7 +27,7 @@
 </script>
 
 <!--API call to GeoJS to get visitor Information-->
-
+<!--
 <p>Hello <span id="user_ip"><span class="icon"><i class="loader"></i></span></span>. The IP you're behind has a country code of <span id="user_countrycode"><span class="icon"><i class="loader"></i></span></span>.</p>
 <script type="application/javascript">
     
@@ -43,17 +42,16 @@
 
  }
 </script>
-<script async src="https://get.geojs.io/v1/ip/geo.js"></script>
-
+-->
 <!--Script request location and returns Latitud and Longitude.-->
 <!--
-<script type="text/javascript">
+    <script type="text/javascript">
         var options = {
-                enableHighAccuracy: true,
-                timeout: 5000,
-                maximumAge: 0
-            };
-
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+        };
+        
             function success(pos) {
                 var crd = pos.coords;
 
@@ -72,6 +70,7 @@
         </script>
     -->
     <script src="forex.js"></script>
+    <script async src="https://get.geojs.io/v1/ip/geo.js"></script>
 </body>
 
 </html>
